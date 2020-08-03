@@ -1,0 +1,9 @@
+version: '3'
+services:
+  ci-master:
+    image: "jenkins/jenkins:2.176.1-alpine"
+    ports:
+      - "80:8080"
+      - "50000:50000"
+    volumes: 
+      - "/opt/jenkins:/var/jenkins_home"
